@@ -1,0 +1,23 @@
+When will we use F1-score instead of precision(accuracy)?
+When the target classes are highly imbalance.
+
+Why don’t we use binary classification function as the activation function in neural networks?
+Note: binary classification function f(x) = {1 if x > 0 0 if x ≤ 0
+The gradient of binary step function is zero. Therefore cannot use backward propagation to update parameters.
+
+What is the bias and variance of a machine learning algorithm?
+Bias is a model underfiting the data, can be cause by miss assumption of the model(wrong or too few features)
+Variance is a model overfiting the data and therefore sensitive to noise and cannot generalize to unseen data well.
+
+When training a single tree in random forest, we don’t prune the tree, why? 
+
+
+What is one-hot encoding?
+one-hot encoding is an vector representation of catagorical feature. For example, [cat, dog, dog, bird] => [[1,0,0],[0,1,0],[0,1,0],[0,0,1]
+
+How to prevent overfitting in neural networks? (write down anything you know)
+Reduce number of layers or total number of neurons.
+Dropout, randomly throw out partial paramters during training
+Batchnormalization 
+Larger training set
+
