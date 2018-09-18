@@ -42,8 +42,8 @@ def predict_max(starting, cnt2=cnt2, cnt3=cnt3):
     while True:
         next_word_prob = prob3(starting)
         next_word = max(next_word_prob.items(), key=operator.itemgetter(1))[0]
+        sentence.append(next_word)
         if len(sentence) < 15 and next_word != ".":
-            sentence.append(next_word)
             starting = (starting[1],next_word)
         else:
             break
