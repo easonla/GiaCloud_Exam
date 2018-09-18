@@ -22,8 +22,8 @@ def prob(grams):
 def ngram_probs(filenme='data/raw_sentences.txt'):
     with open('data/raw_sentences.txt', 'r') as f:
         w = ' '.join(s.strip().lower() for s in f.readlines())
-    bigrams = word_grams(w.split(' '),2)
-    trigrams = word_grams(w.split(' '),3)
+    bigrams = word_grams(w.split(),2)
+    trigrams = word_grams(w.split(),3)
     return prob(bigrams),prob(trigrams)
 
 #Quiz 2-2
