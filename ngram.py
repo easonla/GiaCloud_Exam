@@ -33,7 +33,7 @@ def prob3(bigram, cnt2=cnt2, cnt3=cnt3):
     next_word_prob = {}
     for p in cnt3:
         if p[:2]==bigram: 
-            next_word_prob[p[2]] = cnt3[p]/cnt2[bigram]
+            next_word_prob[p[2]] = cnt2[bigram]/cnt3[p]
     return next_word_prob
 
 #Quiz 2-3
